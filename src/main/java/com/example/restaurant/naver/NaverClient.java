@@ -28,7 +28,7 @@ public class NaverClient {
     @Value("${naver.url.search.image}")
     private String naverImageSearchUrl;
 
-    public SearchLocalRes localSearch(SearchLocalReq searchLocalReq){
+    public SearchLocalRes searchLocal(SearchLocalReq searchLocalReq){
         var uri = UriComponentsBuilder.fromUriString(naverLocalSearchUrl)
                 .queryParams(searchLocalReq.toMultiValueMap())
                 .build()
@@ -48,7 +48,7 @@ public class NaverClient {
         return responseEntity.getBody();
     }
 
-    public void imageSearch(){
+    public void searchImage(){
 
     }
 }

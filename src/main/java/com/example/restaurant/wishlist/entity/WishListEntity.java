@@ -7,9 +7,9 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
 public class WishListEntity extends MemoryDbEntity {
     private String title; //음식명, 장소
     private String category; // 카테고리
