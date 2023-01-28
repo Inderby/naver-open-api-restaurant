@@ -25,5 +25,9 @@ public class SearchLocalRes {
         private String link;
         private String description;
         private String telephone;
+        private String address;
+        private String roadAddress;
+        private int mapx;
+        private int mapy;
     }
 }
